@@ -1,0 +1,98 @@
+[
+    {
+        "food_name": "Spaghetti Bolognese",
+        "description": "A hearty Italian dish made with spaghetti noodles, a rich meat sauce with ground beef, tomatoes, and herbs.",
+        "ingredients": [
+            "1 pound ground beef",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 (28 oz) can crushed tomatoes",
+            "1 tablespoon tomato paste",
+            "Beef broth",
+            "Dried oregano, basil, and thyme",
+            "Spaghetti noodles",
+            "Parmesan cheese (optional)"
+        ],
+        "time": 45,
+        "calories": 500,
+        "food_image": "[Image of Spaghetti Bolognese]"
+    },
+    {
+        "food_name": "Chicken Caesar Salad",
+        "description": "A classic salad with romaine lettuce, grilled chicken, parmesan cheese, croutons, and a creamy Caesar dressing.",
+        "ingredients": [
+            "Romaine lettuce, chopped",
+            "Grilled chicken breast, sliced",
+            "Parmesan cheese, shaved",
+            "Croutons",
+            "Caesar dressing",
+            "Lemon juice",
+            "Garlic powder",
+            "Black pepper"
+        ],
+        "time": 20,
+        "calories": 450,
+        "food_image": "[Image of Chicken Caesar Salad]"
+    },
+    {
+        "food_name": "Crispy-Fried-Chicken-Plate",
+        "description": "Fried chicken pieces with a crispy golden brown crust, served with your favorite sides.",
+        "ingredients": [
+            "Chicken breasts or thighs, cut into pieces",
+            "Flour",
+            "Eggs",
+            "Breadcrumbs",
+            "Spices (paprika, cayenne pepper, garlic powder, etc.)",
+            "Cooking oil"
+        ],
+        "time": 30,
+        "calories": 600,
+        "food_image": "[Image of Crispy Fried Chicken Plate]"
+    },
+    {
+        "food_name": "Pilaf-with-Stewed-Beef-Meat",
+        "description": "A savory rice dish with tender stewed beef, vegetables, and fragrant spices.",
+        "ingredients": [
+            "Basmati rice",
+            "Beef stew meat",
+            "Onions, carrots, and other vegetables (optional)",
+            "Beef broth",
+            "Dried fruits (raisins, apricots, etc.) (optional)",
+            "Spices (cumin, coriander, turmeric, etc.)"
+        ],
+        "time": 60,
+        "calories": 400,
+        "food_image": "[Image of Pilaf with Stewed Beef Meat]"
+    },
+    {
+        "food_name": "Penne-Pasta-Tomato-Sauce-with-Chicken-Tomatoes-Wooden-Table",
+        "description": "Penne pasta tossed in a flavorful tomato sauce with chunks of chicken and fresh tomatoes, served on a rustic wooden table (descriptive name).",
+        "ingredients": [
+            "Penne pasta",
+            "Crushed tomatoes",
+            "Chicken breast, cooked and chopped",
+            "Fresh tomatoes, diced",
+            "Garlic, onion, and herbs",
+            "Olive oil",
+            "Parmesan cheese (optional)"
+        ],
+        "time": 30,
+        "calories": 550,
+        "food_image": "[Image of Penne Pasta with Tomato Sauce and Chicken]"
+    },
+    {
+        "food_name": "Mexican-Tacos-with-Beef-Tomato-Sauce-Salsa",
+        "description": "Spicy ground beef tacos with fresh toppings like salsa, lettuce, cheese, and sour cream on warm tortillas.",
+        "ingredients": [
+            "Ground beef",
+            "Taco seasoning",
+            "Crushed tomatoes",
+            "Corn tortillas",
+            "Salsa, shredded lettuce, cheese, sour cream (toppings)",
+            "Chopped onions, tomatoes, and cilantro (optional)"
+        ],
+        "time": 25,
+        "calories": 400,
+        "food_image": "[Image of Mexican Tacos with Beef]"
+    }
+]
