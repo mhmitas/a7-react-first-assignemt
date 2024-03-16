@@ -1,0 +1,20 @@
+import './cart-food.css'
+
+export default function CartFood() {
+    return (
+        <div className="lg:w-1/3 border p-6 border-slate-500 rounded-xl">
+            <div>
+                <h3 className='text-center font-black text-xl mb-2'>Want to cook: <span>0</span></h3>
+                <hr />
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Time</th>
+                        <th>Calories</th>
+                    </tr>
+                </table>
+            </div>
+            <div></div>
+        </div>
+    )
+}

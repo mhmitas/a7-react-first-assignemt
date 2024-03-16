@@ -4,21 +4,21 @@ import { SlEnergy } from "react-icons/sl";
 
 export default function Food({ food }) {
 
-    console.log(food)
+    // console.log(food)
     const { calories, description, food_image, food_name, time, ingredients } = food;
 
     return (
-        <div className=" border max-w-[400px] max-h-[685px] space-y-3 p-6 light-dark rounded-xl border-gray-500">
+        <div className="max-w-[400px] max-h-[685px] space-y-3 p-6 light-dark rounded-xl border-gray-500 mx-auto md:mx-0">
             {/**/}
             <img className="max-w-96 w-full rounded-xl" src={food_image} alt="" />
             <h3 className="text-2xl font-bold">{food_name}</h3>
-            <p className="">{description}</p><hr />
+            <p className="">{description.slice(0, 60)}...</p><hr />
             <div>
                 <h3 className="text-xl font-bold">Ingredients: {ingredients.length}</h3>
-                <ul className="list-disc *:ml-6">
+                <ul className="list-disc">
                     {
                         ingredients.slice(0, 3).map(
-                            ind => <li>{ind}</li>
+                            (ingredient, idx) => <li key={idx}>{ingredient}</li>
                         )
                     }
                 </ul>
