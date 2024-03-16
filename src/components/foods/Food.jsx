@@ -13,7 +13,10 @@ export default function Food({ food, handleWantToCook }) {
         // console.log('Yes clicked')
         setIsClicked(true)
         handleWantToCook(food)
+
     }
+    console.log(isClicked)
+
 
     return (
         <div className="max-w-[400px] max-h-[685px] space-y-3 p-6 light-dark rounded-xl border-gray-500 mx-auto md:mx-0">
@@ -41,7 +44,7 @@ export default function Food({ food, handleWantToCook }) {
                 onClick={handleCookBtnClick}
                 disabled={isClicked && true}
             >Want to cook</button>
-            {/* <p>{isClicked && `added to kitchen`}</p> */}
+            <p>{isClicked && `added to kitchen`}</p>
         </div>
     )
 }
