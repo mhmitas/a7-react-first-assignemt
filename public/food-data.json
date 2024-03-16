@@ -3,11 +3,11 @@
         "food_name": "Spaghetti Bolognese",
         "description": "A hearty Italian dish made with spaghetti noodles, a rich meat sauce with ground beef, tomatoes, and herbs.",
         "ingredients": [
-            "1 pound ground beef",
-            "1 onion, chopped",
-            "2 cloves garlic, minced",
-            "1 (28 oz) can crushed tomatoes",
-            "1 tablespoon tomato paste",
+            "pound ground beef",
+            "onion, chopped",
+            "cloves garlic, minced",
+            "(28 oz) can crushed tomatoes",
+            "tablespoon tomato paste",
             "Beef broth",
             "Dried oregano, basil, and thyme",
             "Spaghetti noodles",
@@ -15,7 +15,7 @@
         ],
         "time": 45,
         "calories": 500,
-        "food_image": "[https://i.ibb.co/f8D0mmG/Chicken-Caesar-Salad.png"
+        "food_image": "https://i.ibb.co/9bMSSCD/Spaghetti-Bolognese.png"
     },
     {
         "food_name": "Chicken Caesar Salad",
@@ -32,7 +32,7 @@
         ],
         "time": 20,
         "calories": 450,
-        "food_image": "https://i.ibb.co/9bMSSCD/Spaghetti-Bolognese.png"
+        "food_image": "https://i.ibb.co/f8D0mmG/Chicken-Caesar-Salad.png"
     },
     {
         "food_name": "Crispy-Fried-Chicken-Plate",
@@ -47,8 +47,7 @@
         ],
         "time": 30,
         "calories": 600,
-        "food_image": "https://i.ibb.co/1GMB5hs/pasta-tomato-sauce-with-chicken.jpg"
-    },
+        "food_image": "https://i.ibb.co/5jmq3w1/istockphoto-526276598-612x612.jpg"},
     {
         "food_name": "Pilaf-with-Stewed-Beef-Meat",
         "description": "A savory rice dish with tender stewed beef, vegetables, and fragrant spices.",
@@ -62,7 +61,7 @@
         ],
         "time": 60,
         "calories": 400,
-        "food_image": "https://i.ibb.co/kqFhGqJ/pilaf-with-stewed-beef-meat-plate.jpg"
+        "food_image": "https://i.ibb.co/wzWbZCf/Pilaf-with-Stewed-Beef-Meat.jpg"
     },
     {
         "food_name": "Penne-Pasta-Tomato-Sauce-with-Chicken-Tomatoes-Wooden-Table",
@@ -78,7 +77,7 @@
         ],
         "time": 30,
         "calories": 550,
-        "food_image": "https://i.ibb.co/qjJ28Kt/crispy-fried-chicken-plate.jpg"
+        "food_image": "https://i.ibb.co/zJ1zMV9/Penne-Pasta-Tomato-Sauce-with-Chicken.jpg"
     },
     {
         "food_name": "Mexican-Tacos-with-Beef-Tomato-Sauce-Salsa",
@@ -93,6 +92,6 @@
         ],
         "time": 25,
         "calories": 400,
-        "food_image": "https://i.ibb.co/xzK4QgX/mexican-tacos-with-beef-tomato-sauce-salsa.jpg"
+        "food_image": "https://i.ibb.co/TYXKmPp/Mexican-Tacos-with-Beef-Tomato-Sauce-Salsa-2.jpg"
     }
 ]
