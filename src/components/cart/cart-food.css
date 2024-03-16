@@ -3,13 +3,14 @@ table {
     width: 100%;
     margin: 20px 0;
 }
-th{
+
+th {
     font-size: 1.2rem
 }
 
 td,
 th {
-    /* border: 1px solid rgba(105, 90, 205, 0.542); */
+    /* border: 1px solid #695acd2c; */
     text-align: left;
     padding: 8px;
 }
@@ -17,4 +18,3 @@ th {
 tr:nth-child(even) {
     background-color: #31363F;
 }
-

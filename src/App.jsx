@@ -9,12 +9,10 @@ function App() {
 
   const [wantToCook, setWantToCook] = useState([])
   function handleWantToCook(food) {
-    console.log(food);
+    // console.log(food);
     const updateWantToCook = [...wantToCook, food]
     setWantToCook(updateWantToCook)
   }
-
-  console.log(wantToCook)
 
 
   return (
