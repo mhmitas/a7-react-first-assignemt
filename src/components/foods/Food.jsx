@@ -17,7 +17,6 @@ export default function Food({ food, handleWantToCook }) {
     }
     console.log(isClicked)
 
-
     return (
         <div className="max-w-[400px] max-h-[685px] space-y-3 p-6 light-dark rounded-xl border-gray-500 mx-auto md:mx-0">
             {/**/}
