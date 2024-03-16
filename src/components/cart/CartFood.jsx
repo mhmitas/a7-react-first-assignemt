@@ -1,6 +1,10 @@
 import './cart-food.css'
 
-export default function CartFood() {
+export default function CartFood({ wantToCook }) {
+
+    // const { food_name, time, calories } = wantToCook;
+    // console.log(wantToCook)
+
     return (
         <div className="lg:w-1/3 border p-6 border-slate-500 rounded-xl">
             <div>
@@ -12,6 +16,11 @@ export default function CartFood() {
                         <th>Time</th>
                         <th>Calories</th>
                     </tr>
+                </table>
+                <table>
+                    {
+                        
+                    }
                 </table>
             </div>
             <div></div>

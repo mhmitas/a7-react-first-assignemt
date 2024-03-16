@@ -2,7 +2,7 @@ import { FaRegClock } from "react-icons/fa";
 import { SlEnergy } from "react-icons/sl";
 
 
-export default function Food({ food }) {
+export default function Food({ food, handleWantToCook }) {
 
     // console.log(food)
     const { calories, description, food_image, food_name, time, ingredients } = food;
@@ -28,7 +28,10 @@ export default function Food({ food }) {
                 <div className="flex items-center gap-1"><SlEnergy />
                     {calories} calories</div>
             </div>
-            <button className="btn ">Want to cook</button>
+            <button
+                className="btn"
+                onClick={() => handleWantToCook(food)}
+            >Want to cook</button>
         </div>
     )
 }

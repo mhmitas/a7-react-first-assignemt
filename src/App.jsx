@@ -8,9 +8,13 @@ import Header from './components/header/Header'
 function App() {
 
   const [wantToCook, setWantToCook] = useState([])
-  function handleWantToCook() {
-    console.log('i will handleWantToCook')
+  function handleWantToCook(food) {
+    console.log(food);
+    const updateWantToCook = [...wantToCook, food]
+    setWantToCook(updateWantToCook)
   }
+
+  console.log(wantToCook)
 
 
   return (
@@ -20,7 +24,7 @@ function App() {
 
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
-        <CartFood></CartFood>
+        <CartFood wantToCook={wantToCook}></CartFood>
       </div>
 
     </>
