@@ -3,7 +3,6 @@ import './cart-food.css'
 
 export default function CartFood({ wantToCook, handlePreparing }) {
 
-    // console.log(wantToCook)
 
     return (
         <div className="">

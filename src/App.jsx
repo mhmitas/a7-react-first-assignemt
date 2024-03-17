@@ -27,11 +27,13 @@ function App() {
   }
 
   const [currentCookingFoods, setCurrentCookingFoods] = useState([])
+
   function handlePreparing(item) {
     const updateFoodTable = wantToCook.filter(food => food.id !== item.id)
     setWantToCook(updateFoodTable)
 
-    
+    const updateCurrentCookingFoods = [...currentCookingFoods, item]
+    setCurrentCookingFoods(updateCurrentCookingFoods)
   }
 
   return (
@@ -43,9 +45,10 @@ function App() {
 
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
+
         <div className='lg:w-[40%] border p-6 border-slate-500 rounded-xl h-max'>
           <CartFood wantToCook={wantToCook} handlePreparing={handlePreparing}></CartFood>
-          <CurrentlyCooking></CurrentlyCooking>
+          <CurrentlyCooking currentCookingFoods={currentCookingFoods}></CurrentlyCooking>
         </div>
       </div>
 

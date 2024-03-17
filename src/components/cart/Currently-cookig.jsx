@@ -1,7 +1,9 @@
-export default function CurrentlyCooking() {
+export default function CurrentlyCooking({ currentCookingFoods }) {
+    // console.log(currentCookingFoods)
+
     return (
         <div className="mt-12">
-            <h3 className='text-center font-black text-xl mb-2'>Currenly cooking</h3><hr />
+            <h3 className='text-center font-black text-xl mb-2'>Currenly cooking: {currentCookingFoods.length}</h3><hr />
             <table>
                 <thead>
                     <tr>
@@ -12,16 +14,29 @@ export default function CurrentlyCooking() {
                 </thead>
                 <tbody>
                     {
-                        // wantToCook.map(
-                        //     (food, idx) => <AddWantCookTable
-                        //         key={idx}
-                        //         food={food}
-                        //         handlePreparing={handlePreparing}
-                        //     ></AddWantCookTable>
-                        // )
+                        currentCookingFoods.map(
+                            (food, idx) => <CurrentCookingFood
+                                key={idx}
+                                food={food}
+                            ></CurrentCookingFood>
+                        )
                     }
                 </tbody>
             </table>
         </div>
+    )
+}
+
+function CurrentCookingFood({food}) {
+
+    const { food_name, time, calories } = food;
+
+
+    return (
+        <tr>
+            <td>{food_name}</td>
+            <td>{time}</td>
+            <td>{calories} Calories</td>
+        </tr>
     )
 }
