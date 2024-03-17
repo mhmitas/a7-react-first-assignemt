@@ -8,7 +8,7 @@ export default function CartFood({ wantToCook }) {
     return (
         <div className="lg:w-1/3 border p-6 border-slate-500 rounded-xl h-max">
             <div>
-                <h3 className='text-center font-black text-xl mb-2'>Want to cook: <span>0</span></h3>
+                <h3 className='text-center font-black text-xl mb-2'>Want to cook: {wantToCook.length}</h3>
                 <hr />
                 <table>
                     <tr>
