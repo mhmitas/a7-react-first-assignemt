@@ -5,6 +5,9 @@ import Foods from './components/foods/Foods'
 import Banner from './components/header/Banner'
 import Header from './components/header/Header'
 import Recipes from './components/foods/Recipes'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CurrentlyCooking from './components/cart/Currently-cookig'
 
 function App() {
 
@@ -18,13 +21,17 @@ function App() {
     if (!isExist) {
       setWantToCook(updateWantToCook)
     } else {
-      alert('This food already esists')
+      // alert('This food already esists')
+      toast('This food already esists')
     }
   }
 
+  const [currentCookingFoods, setCurrentCookingFoods] = useState([])
   function handlePreparing(item) {
     const updateFoodTable = wantToCook.filter(food => food.id !== item.id)
     setWantToCook(updateFoodTable)
+
+    
   }
 
   return (
@@ -32,10 +39,14 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Recipes></Recipes>
+      <ToastContainer theme="dark" />
 
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
-        <CartFood wantToCook={wantToCook} handlePreparing={handlePreparing}></CartFood>
+        <div className='lg:w-[40%] border p-6 border-slate-500 rounded-xl h-max'>
+          <CartFood wantToCook={wantToCook} handlePreparing={handlePreparing}></CartFood>
+          <CurrentlyCooking></CurrentlyCooking>
+        </div>
       </div>
 
     </>

@@ -13,11 +13,12 @@ export default function Foods({ handleWantToCook }) {
     }, [])
 
     return (
-        <div className="lg:w-2/3 border border-slate-500 rounded-xl grid md:grid-cols-2 gap-8 p-6">
+        <div className="lg:w-[60%] border border-slate-500 rounded-xl grid md:grid-cols-2 gap-8 p-6">
             {
                 foods.map(
                     (food, idx) => <Food
                         key={idx}
+                        index={idx}
                         food={food}
                         handleWantToCook={handleWantToCook}
                     ></Food>

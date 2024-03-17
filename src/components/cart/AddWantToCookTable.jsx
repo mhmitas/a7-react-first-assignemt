@@ -1,10 +1,11 @@
-export default function AddWantCookTable({ food, handlePreparing }) {
+export default function AddWantCookTable({ food, handlePreparing, index}) {
 
     const { food_name, time, calories } = food;
 
 
     return (
         <tr>
+            <td>{index+1}</td>
             <td>{food_name}</td>
             <td>{time}</td>
             <td>{calories}</td>
