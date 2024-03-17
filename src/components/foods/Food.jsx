@@ -8,14 +8,6 @@ export default function Food({ food, handleWantToCook }) {
     // console.log(food)
     const { calories, description, food_image, food_name, time, ingredients } = food;
 
-    const [isClicked, setIsClicked] = useState(false)
-    const handleCookBtnClick = () => {
-        // console.log('Yes clicked')
-        setIsClicked(true)
-        handleWantToCook(food)
-
-    }
-    // console.log(isClicked)
 
     return (
         <div className="max-w-[400px] max-h-[685px] space-y-3 p-6 light-dark rounded-xl border-gray-500 mx-auto md:mx-0">
@@ -40,10 +32,8 @@ export default function Food({ food, handleWantToCook }) {
             </div>
             <button
                 className="btn"
-                onClick={handleCookBtnClick}
-
+                onClick={() => handleWantToCook(food)}
             >Want to cook</button>
-            <p>{isClicked && `added to kitchen`}</p>
         </div>
     )
 }

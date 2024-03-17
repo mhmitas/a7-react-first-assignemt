@@ -14,13 +14,17 @@ function App() {
     const isExist = wantToCook.find(element => element.id == food.id)
     const updateWantToCook = [...wantToCook, food]
     // console.log(isExist)
-    if(!isExist){
+    if (!isExist) {
       setWantToCook(updateWantToCook)
-    }else{
+    } else {
       alert('This food already esists')
     }
   }
 
+  function handlePreparing(item) {
+    const updateFoodTable = wantToCook.filter(food => food.id !== item.id)
+    setWantToCook(updateFoodTable)
+  }
 
   return (
     <>
@@ -29,7 +33,7 @@ function App() {
 
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
-        <CartFood wantToCook={wantToCook}></CartFood>
+        <CartFood wantToCook={wantToCook} handlePreparing={handlePreparing}></CartFood>
       </div>
 
     </>

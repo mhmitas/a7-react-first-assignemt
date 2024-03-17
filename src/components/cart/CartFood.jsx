@@ -1,7 +1,7 @@
 import AddWantCookTable from './AddWantToCookTable'
 import './cart-food.css'
 
-export default function CartFood({ wantToCook }) {
+export default function CartFood({ wantToCook, handlePreparing }) {
 
     // console.log(wantToCook)
 
@@ -24,6 +24,7 @@ export default function CartFood({ wantToCook }) {
                                 (food, idx) => <AddWantCookTable
                                     key={idx}
                                     food={food}
+                                    handlePreparing={handlePreparing}
                                 ></AddWantCookTable>
                             )
                         }
