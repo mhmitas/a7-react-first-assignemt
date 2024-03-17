@@ -46,7 +46,7 @@ function App() {
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
 
-        <div className='lg:w-[40%] border p-6 border-slate-500 rounded-xl h-max'>
+        <div className='lg:w-1/3 border p-6 border-slate-500 rounded-xl h-max'>
           <CartFood wantToCook={wantToCook} handlePreparing={handlePreparing}></CartFood>
           <CurrentlyCooking currentCookingFoods={currentCookingFoods}></CurrentlyCooking>
         </div>
