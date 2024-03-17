@@ -11,10 +11,14 @@ function App() {
 
   function handleWantToCook(food) {
     // console.log(food);
-    // const updateWantToCook = [...wantToCook, food]
-    // setWantToCook(updateWantToCook)
-    const isExist = wantToCook.find(element => element.id)
-    console.log(isExist)
+    const isExist = wantToCook.find(element => element.id == food.id)
+    const updateWantToCook = [...wantToCook, food]
+    // console.log(isExist)
+    if(!isExist){
+      setWantToCook(updateWantToCook)
+    }else{
+      alert('This food already esists')
+    }
   }
 
 
