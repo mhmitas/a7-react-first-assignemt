@@ -1,6 +1,7 @@
 [
     {
         "food_name": "Spaghetti Bolognese",
+        "id": 101,
         "description": "A hearty Italian dish made with spaghetti noodles, a rich meat sauce with ground beef, tomatoes, and herbs.",
         "ingredients": [
             "pound ground beef",
@@ -19,6 +20,7 @@
     },
     {
         "food_name": "Chicken Caesar Salad",
+        "id": 102,
         "description": "A classic salad with romaine lettuce, grilled chicken, parmesan cheese, croutons, and a creamy Caesar dressing.",
         "ingredients": [
             "Romaine lettuce, chopped",
@@ -36,6 +38,7 @@
     },
     {
         "food_name": "Crispy-Fried-Chicken-Plate",
+        "id": 103,
         "description": "Fried chicken pieces with a crispy golden brown crust, served with your favorite sides.",
         "ingredients": [
             "Chicken breasts or thighs, cut into pieces",
@@ -47,9 +50,11 @@
         ],
         "time": 30,
         "calories": 600,
-        "food_image": "https://i.ibb.co/5jmq3w1/istockphoto-526276598-612x612.jpg"},
+        "food_image": "https://i.ibb.co/5jmq3w1/istockphoto-526276598-612x612.jpg"
+    },
     {
         "food_name": "Pilaf-with-Stewed-Beef-Meat",
+        "id": 104,
         "description": "A savory rice dish with tender stewed beef, vegetables, and fragrant spices.",
         "ingredients": [
             "Basmati rice",
@@ -65,6 +70,7 @@
     },
     {
         "food_name": "Penne-Pasta-Tomato-Sauce",
+        "id": 105,
         "description": "Penne pasta tossed in a flavorful tomato sauce with chunks of chicken and fresh tomatoes, served on a rustic wooden table (descriptive name).",
         "ingredients": [
             "Penne pasta",
@@ -81,6 +87,7 @@
     },
     {
         "food_name": "Mexican-Tacos-with-Beef-Tomato-Sauce-Salsa",
+        "id": 106,
         "description": "Spicy ground beef tacos with fresh toppings like salsa, lettuce, cheese, and sour cream on warm tortillas.",
         "ingredients": [
             "Ground beef",
