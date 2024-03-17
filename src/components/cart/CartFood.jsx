@@ -11,19 +11,23 @@ export default function CartFood({ wantToCook }) {
                 <h3 className='text-center font-black text-xl mb-2'>Want to cook: {wantToCook.length}</h3>
                 <hr />
                 <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Time</th>
-                        <th>Calories</th>
-                    </tr>
-                    {
-                        wantToCook.map(
-                            (food, idx) => <AddWantCookTable
-                                key={idx}
-                                food={food}
-                            ></AddWantCookTable>
-                        )
-                    }
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            wantToCook.map(
+                                (food, idx) => <AddWantCookTable
+                                    key={idx}
+                                    food={food}
+                                ></AddWantCookTable>
+                            )
+                        }
+                    </tbody>
                 </table>
             </div>
             <div></div>

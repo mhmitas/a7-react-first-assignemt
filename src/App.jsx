@@ -8,10 +8,13 @@ import Header from './components/header/Header'
 function App() {
 
   const [wantToCook, setWantToCook] = useState([])
+
   function handleWantToCook(food) {
     // console.log(food);
-    const updateWantToCook = [...wantToCook, food]
-    setWantToCook(updateWantToCook)
+    // const updateWantToCook = [...wantToCook, food]
+    // setWantToCook(updateWantToCook)
+    const isExist = wantToCook.find(element => element.id)
+    console.log(isExist)
   }
 
 
