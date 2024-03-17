@@ -4,6 +4,7 @@ import CartFood from './components/cart/CartFood'
 import Foods from './components/foods/Foods'
 import Banner from './components/header/Banner'
 import Header from './components/header/Header'
+import Recipes from './components/foods/Recipes'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <>
       <Header></Header>
       <Banner></Banner>
+      <Recipes></Recipes>
 
       <div className='max-w flex flex-col-reverse lg:flex-row gap-4'>
         <Foods handleWantToCook={handleWantToCook}></Foods>
